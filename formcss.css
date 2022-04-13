@@ -1,0 +1,11 @@
+*{
+ margin:0;
+ padding:0;
+ border:10px;
+}
+.container{
+ width:100%;
+ height:300%;
+ background-color:pink;
+ 
+}

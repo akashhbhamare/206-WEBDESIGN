@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+<html>
+<body>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="D:\download.jpg" alt="Smiley" width="32" height="32">
+
+<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+
+
+<p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+
+<p id="demo"></p>
+
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+
+<button onclick="Function()">Click me</button>
+
+<p id="demo"></p>
+
+
+
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+function Function() {
+  document.getElementById("demo").innerHTML = "Hello";
+}
+</script>
+
+</body>
+</html>
